@@ -275,8 +275,7 @@ const NewsPage = () => {
 
   return (
     <div className="container mx-auto p-6">
-      <h1 className="text-3xl font-bold text-center mb-8">News API Testing Dashboard</h1>
-
+      <h1 className="text-3xl font-bold text-center mb-8">Latest News</h1>
       <Tabs defaultValue="headlines" className="space-y-6">
         <TabsList className="grid w-full grid-cols-4">
           <TabsTrigger value="headlines">Top Headlines</TabsTrigger>
@@ -290,7 +289,7 @@ const NewsPage = () => {
           <Card>
             <CardHeader>
               <CardTitle>Top Headlines by Category</CardTitle>
-              <CardDescription>Testing: newsService.getTopHeadlines(category, limit)</CardDescription>
+              <CardDescription>Get the latest news headlines by category</CardDescription>
             </CardHeader>
             <CardContent>
               <div className="flex flex-wrap gap-2 mb-4">
@@ -335,7 +334,7 @@ const NewsPage = () => {
           <Card>
             <CardHeader>
               <CardTitle>Search News Articles</CardTitle>
-              <CardDescription>Testing: newsService.searchNews(query, limit)</CardDescription>
+              <CardDescription>Search for news articles by keywords</CardDescription>
             </CardHeader>
             <CardContent>
               <div className="flex gap-2 mb-4">
@@ -374,7 +373,7 @@ const NewsPage = () => {
           <Card>
             <CardHeader>
               <CardTitle>News by Multiple Categories</CardTitle>
-              <CardDescription>Testing: newsService.getNewsByCategories(categories[], limit)</CardDescription>
+              <CardDescription>Browse news from multiple categories simultaneously</CardDescription>
             </CardHeader>
             <CardContent>
               <div className="mb-4">
@@ -423,7 +422,7 @@ const NewsPage = () => {
           <Card>
             <CardHeader>
               <CardTitle>Available News Sources</CardTitle>
-              <CardDescription>Testing: newsService.getNewsSources()</CardDescription>
+              <CardDescription>Browse available news sources and publications</CardDescription>
             </CardHeader>
             <CardContent>
               {sourcesLoading && (
