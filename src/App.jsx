@@ -19,6 +19,8 @@ import CareerPath from "./pages/careerpath.jsx"
 import CareerResult from "./pages/careerresult.jsx"
 import SeePath from "./pages/seepath.jsx"
 import './App.css'
+import AdminDash from './pages/admindash.jsx'
+import AdminAnalysis from './pages/adminanalysis.jsx'  // CHANGED: Import from pages, not services, and use uppercase name
 
 function AppContent() {
   const location = useLocation();
@@ -45,6 +47,8 @@ function AppContent() {
         <Route path="/career-path" element={<CareerPath />} />
         <Route path="/careerresult" element={<CareerResult />} />
         <Route path="/seepath" element={<SeePath />} />
+        <Route path="/admindash" element={<AdminDash />} />
+        <Route path="/adminanalysis" element={<AdminAnalysis />} />  {/* CHANGED: Use uppercase component name */}
       </Routes>
     </>
   );
